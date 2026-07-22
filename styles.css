@@ -78,7 +78,7 @@ li {
     background-color: rgba(80, 17, 204);
 }
 button {
-    cursor: not-allowed;
+    cursor: pointer;
     border: none;
 }
 
@@ -1421,21 +1421,22 @@ footer {
     width: auto;
     max-width: 384px;
   }
-  .btn__menu {
-    display: block;
+  .nav__links {
+    display: none;
   }
-  .menu {
-    visibility: hidden; 
-    opacity: 0;
-    transform: translateX(100%);
-    }
 
-    .menu--open {
-    visibility: visible; 
-    opacity: 1;
-    transform: translateX(0); 
-    transition: all 300ms ease; 
-    }
+  .btn__menu--open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn__menu--close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .section__para {
     font-size: 14px;
   }
